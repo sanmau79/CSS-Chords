@@ -9,21 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/foundation.css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-	<script type="text/javascript">
-		$( document ).ready(function() {
-		  	
-		        var chords = $(".acordes"); 
-		        var characters = chords.text().split('');
-		        chords.empty();  
-		        var content = '';
-		        for(var i = 0; i < characters.length; i++) {
-		            content += '<div>' + characters[i] + '</div>'; 
-		        }
-		        chords.append(content);
-
-		});
-	</script>
+	<script src="js/min/jquery.chords.min.js"></script>
 
 </head>
 
@@ -95,10 +81,51 @@
 				<section class="acordes">CCDD</section>
 			</div>
 
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
 		</div>
 	</section>
 
-	<script src="js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+		  		
+		  	recursivelyWrapTextNodes($(".acordes"));
+
+		});
+	</script>
 
 </body>
 </html>

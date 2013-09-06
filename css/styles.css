@@ -1,3 +1,10 @@
+.wrapper {
+  width: auto;
+  display: block;
+  overflow: hidden;
+  float: left;
+}
+
 .pentagram {
   width: 90%;
   height: 200px;
@@ -20,39 +27,46 @@
   padding: 20px 0;
   margin: auto;
   background-color: #f9f9f9;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
-.tablaturas .tab {
+.tablaturas .wrapper {
+  min-width: 100%;
+  height: 80px;
+  white-space: nowrap;
+}
+.tablaturas .wrapper .tab {
   width: 140px;
   height: 80px;
   display: table;
   float: left;
   border-right: solid 1px #d5d5d5;
 }
-.tablaturas .tab .tiempo, .tablaturas .tab .acordes {
+.tablaturas .wrapper .tab .tiempo, .tablaturas .wrapper .tab .acordes {
   width: 100%;
   height: 40px;
   display: table-row;
 }
-.tablaturas .tab .tiempo > div, .tablaturas .tab .acordes > div {
+.tablaturas .wrapper .tab .tiempo > div, .tablaturas .wrapper .tab .acordes > div {
   width: auto;
   height: 40px;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
-.tablaturas .tab .tiempo > div.n, .tablaturas .tab .tiempo > div.b, .tablaturas .tab .tiempo > div.r, .tablaturas .tab .acordes > div.n, .tablaturas .tab .acordes > div.b, .tablaturas .tab .acordes > div.r {
+.tablaturas .wrapper .tab .tiempo > div.n, .tablaturas .wrapper .tab .tiempo > div.b, .tablaturas .wrapper .tab .tiempo > div.r, .tablaturas .wrapper .tab .acordes > div.n, .tablaturas .wrapper .tab .acordes > div.b, .tablaturas .wrapper .tab .acordes > div.r {
   background: url("../img/tiempo.png") no-repeat;
   background-position: center top;
 }
-.tablaturas .tab .tiempo > div.n, .tablaturas .tab .acordes > div.n {
+.tablaturas .wrapper .tab .tiempo > div.n, .tablaturas .wrapper .tab .acordes > div.n {
   width: 25%;
   background-position: center top;
 }
-.tablaturas .tab .tiempo > div.b, .tablaturas .tab .acordes > div.b {
+.tablaturas .wrapper .tab .tiempo > div.b, .tablaturas .wrapper .tab .acordes > div.b {
   width: 50%;
   background-position: center center;
 }
-.tablaturas .tab .tiempo > div.r, .tablaturas .tab .acordes > div.r {
+.tablaturas .wrapper .tab .tiempo > div.r, .tablaturas .wrapper .tab .acordes > div.r {
   width: 100%;
   background-position: center bottom;
 }
