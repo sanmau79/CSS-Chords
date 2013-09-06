@@ -19,13 +19,13 @@
 // TABLATURA: 
 .tablaturas{
   width:90%;height:120px;
-  padding:20px 0; margin:auto;
+  padding:20px 10px; margin:auto;
   background-color: #f9f9f9;
   
 
   .wrapper{
     width:100%;
-    height: 80px;
+    height: 90px;
     overflow-x:scroll; overflow-y: hidden;
     white-space:nowrap;
 
@@ -34,6 +34,11 @@
       display: inline-block;
       border-right: solid 1px #d5d5d5;
 
+      // table, added by js
+      .ta-table{
+        width: 100%; height: 100%;
+        display: table;
+      }
 
       // Tiemp & acordes:
       .tiempo, .acordes{

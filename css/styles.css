@@ -17,13 +17,13 @@
 .tablaturas {
   width: 90%;
   height: 120px;
-  padding: 20px 0;
+  padding: 20px 10px;
   margin: auto;
   background-color: #f9f9f9;
 }
 .tablaturas .wrapper {
   width: 100%;
-  height: 80px;
+  height: 90px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -33,6 +33,11 @@
   height: 80px;
   display: inline-block;
   border-right: solid 1px #d5d5d5;
+}
+.tablaturas .wrapper .tab .ta-table {
+  width: 100%;
+  height: 100%;
+  display: table;
 }
 .tablaturas .wrapper .tab .tiempo, .tablaturas .wrapper .tab .acordes {
   width: 100%;

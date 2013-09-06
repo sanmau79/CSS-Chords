@@ -13,3 +13,6 @@ recursivelyWrapTextNodes = function($node) {
         recursivelyWrapTextNodes($this);
     });
 };
+
+
+    $( ".tab" ).each().wrapInner('<div class="new" />');
