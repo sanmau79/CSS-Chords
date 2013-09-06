@@ -1,0 +1,58 @@
+.pentagram {
+  width: 90%;
+  height: 200px;
+  padding: 20px;
+  margin: auto;
+  background-color: #f9f9f9;
+}
+.pentagram .pent {
+  width: 140px;
+  height: 160px;
+  float: left;
+  background: url("../img/chords.png") repeat-x 0 0;
+  background-size: 100% 100%;
+  border-right: solid 1px #d5d5d5;
+}
+
+.tablaturas {
+  width: 90%;
+  height: 120px;
+  padding: 20px 0;
+  margin: auto;
+  background-color: #f9f9f9;
+}
+.tablaturas .tab {
+  width: 140px;
+  height: 80px;
+  display: table;
+  float: left;
+  border-right: solid 1px #d5d5d5;
+}
+.tablaturas .tab .tiempo, .tablaturas .tab .acordes {
+  width: 100%;
+  height: 40px;
+  display: table-row;
+}
+.tablaturas .tab .tiempo > div, .tablaturas .tab .acordes > div {
+  width: auto;
+  height: 40px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.tablaturas .tab .tiempo > div.n, .tablaturas .tab .tiempo > div.b, .tablaturas .tab .tiempo > div.r, .tablaturas .tab .acordes > div.n, .tablaturas .tab .acordes > div.b, .tablaturas .tab .acordes > div.r {
+  background: url("../img/tiempo.png") no-repeat;
+  background-position: center top;
+}
+.tablaturas .tab .tiempo > div.n, .tablaturas .tab .acordes > div.n {
+  width: 25%;
+  background-position: center top;
+}
+.tablaturas .tab .tiempo > div.b, .tablaturas .tab .acordes > div.b {
+  width: 50%;
+  background-position: center center;
+}
+.tablaturas .tab .tiempo > div.r, .tablaturas .tab .acordes > div.r {
+  width: 100%;
+  background-position: center bottom;
+}

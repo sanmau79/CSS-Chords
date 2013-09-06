@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Acordes</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$( document ).ready(function() {
+		  	
+		        var chords = $(".acordes"); 
+		        var characters = chords.text().split('');
+		        chords.empty();  
+		        var content = '';
+		        for(var i = 0; i < characters.length; i++) {
+		            content += '<div>' + characters[i] + '</div>'; 
+		        }
+		        chords.append(content);
+
+		});
+	</script>
+
+</head>
+
+<body>
+	<header><h1><!--Acordes Redonditos--></h1></header>
+	
+	<!--<section class="pentagram">
+		<div class="pent">
+			<section class="tiempo">
+				<div class="n">Negra</div> <div class="n">Negra</div> <div class="n">Negra</div> <div class="n">Negra</div>
+			</section>
+			<section class="">
+			</section>
+		</div>
+		<div class="pent">
+		</div>
+	</section>-->
+
+	
+	<section class="tablaturas">
+		<div class="wrapper">
+			
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+			<div class="tab">
+				<section class="tiempo">
+					<div class="n"></div> <div class="n"></div> <div class="n"></div> <div class="n"></div>
+				</section>
+				<section class="acordes">CCDD</section>
+			</div>
+
+		</div>
+	</section>
+
+	<script src="js/jquery.nicescroll.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+// PENTAGRAMA: 
+.pentagram{
+  width:90%;height:200px;
+  padding:20px; margin:auto;
+  background-color: #f9f9f9;
+
+  .pent{
+    width:140px; height:160px;
+    float: left;
+    background: url('../img/chords.png') repeat-x 0 0;
+    background-size: 100% 100%;
+    border-right: solid 1px #d5d5d5;
+  }
+}
+
+// TABLATURA: 
+.tablaturas{
+  width:90%;height:120px;
+  padding:20px 0; margin:auto;
+  background-color: #f9f9f9;
+
+  .tab{
+    width:140px; height:80px;
+    display: table;
+    float: left;
+    border-right: solid 1px #d5d5d5;
+
+
+    // Tiemp & acordes:
+    .tiempo, .acordes{
+      width: 100%; height: 40px;
+      display: table-row;
+      & > div{
+        width:auto; height:40px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+
+        // Notas:
+        &.n, &.b, &.r{
+          background: url('../img/tiempo.png') no-repeat;
+          background-position: center top;
+        }
+        &.n{ width:25%; background-position: center top;}
+        &.b{ width:50%; background-position: center center;}
+        &.r{ width:100%; background-position: center bottom;}
+      }
+    }
+
+  }
+}
+
